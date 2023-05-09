@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>momentum</title>
+</head>
+<body>
+  <header class="header">
+    <div class="player">
+      <div class="player-controls">
+        <button class="play-prev player-icon"></button>
+        <button class="play player-icon"></button>
+        <button class="play-next player-icon"></button>
+      </div>
+      <p class="song-title"></p>
+      <div class="additional-settings-player">
+        <div class="player-time">
+          <div class="current">0:00</div>
+          <div class="divider">/</div>
+          <div class="length">0:00</div>
+        </div>
+        <div class="timeline">
+          <div class="progress"></div>
+        </div>
+        <div class="volume-container">
+          <div class="volume-button">
+            <div class="volume player-icon"></div>
+          </div>
+          
+          <div class="volume-slider">
+            <div class="volume-percentage"></div>
+          </div>
+        </div>
+      </div>
+      <ul class="play-list"></ul>
+    </div>
+    <div class="weather">
+      <input type="text" class="city" value="Minsk"/>
+      <div class="weather-error"></div>
+      <div class="weather-container">
+        <i class="weather-icon owf"></i>
+        <div class="description-container">
+          <span class="temperature"></span>
+          <span class="weather-description"></span>
+        </div>
+        <div class="wind"></div>
+        <div class="humidity"></div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time"></time>
+    <date class="date"></date>
+    <div class="greeting-container">
+      <span class="greeting"></span>
+      <input type="text" class="name" placeholder="[Enter name]">
+    </div>
+  </main>
+  <footer class="footer">
+    <form>
+      <div class="settings setting-language">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="language" id="en" value="en" checked>
+          <label class="form-check-label" for="en">
+            en
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="language" id="ru" value="ru">
+          <label class="form-check-label" for="ru">
+            ru
+          </label>
+        </div>
+      </div>
+      <div class="settings setting-bg">
+        <div class="form-check">
+          <input class="input-change-bg" type="radio" name="bg" id="github" value="github" checked>
+          <label class="form-check-label" for="github">
+            GitHub
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="input-change-bg" type="radio" name="bg" id="unsplash" value="unsplash">
+          <label class="form-check-label" for="unsplash">
+            Unsplash API
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="input-change-bg" type="radio" name="bg" id="flickr" value="flickr">
+          <label class="form-check-label" for="flickr">
+            Flickr API
+          </label>
+        </div>
+      </div>
+      <div class="settings bg-theme">
+        <div class="form-check">
+          <input class="input-theme" type="radio" name="theme" id="morning" value="morning">
+          <label class="form-check-label" for="morning">
+            Morning
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="input-theme" type="radio" name="theme" id="afternoon" value="afternoon">
+          <label class="form-check-label" for="afternoon">
+            Afternoon
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="input-theme" type="radio" name="theme" id="evening" value="evening">
+          <label class="form-check-label" for="evening">
+            Evening
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="input-theme" type="radio" name="theme" id="night" value="night">
+          <label class="form-check-label" for="night">
+            Night
+          </label>
+        </div>
+      </div>
+      <div class="settings setting-block">
+        <div class="form-check">
+          <input class="input-hidden-block" type="checkbox" name="hidden" id="time" value="time">
+          <label class="form-check-label" for="time">
+            Time
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="input-hidden-block" type="checkbox" name="hidden" id="date" value="date">
+          <label class="form-check-label" for="date">
+            Date
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="input-hidden-block" type="checkbox" name="hidden" id="greeting" value="greeting-container">
+          <label class="form-check-label" for="greeting">
+            Greeting
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="input-hidden-block" type="checkbox" name="hidden" id="quote" value="quotes">
+          <label class="form-check-label" for="quote">
+            Quote
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="input-hidden-block" type="checkbox" name="hidden" id="weather" value="weather">
+          <label class="form-check-label" for="weather">
+            Weather
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="input-hidden-block" type="checkbox" name="hidden" id="audio" value="player">
+          <label class="form-check-label" for="audio">
+            Audio
+          </label>
+        </div>
+      </div>
+    </form>
+    <div class="quotes">
+        <button class="change-quote"></button>
+        <div>
+          <div class="quote"></div>
+          <div class="author"></div>
+        </div>
+    </div>
+  </footer>
+  <script type="module" src="js/script.js"></script>
+</body>
+</html>
